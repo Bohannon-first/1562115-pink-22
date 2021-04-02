@@ -5,13 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк | страница формы</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body page__form">
   <header class="page-header">
     <a class="page-header__logo" href="index.html" aria-label="Перейти на главную страницу">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/74x23" width="74" height="23"
+      <img class="page-header__logo-image" src="img/content/mobile/logo-header.png" width="74" height="23"
         alt="Логотип приложения Pink">
     </a>
     <nav class="main-nav">
@@ -23,7 +27,7 @@
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Фотографии</a>
+          <a class="main-nav__link" href="catalog.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Конкурс</a>
@@ -94,13 +98,13 @@
         <fieldset class="form__contacts">
           <ul class="form__list-contacts">
             <li class="form__item-contacts">
-              <input class="form__input-phone" type="tel" id="your-phone" name="phone" placeholder="Номер, пожалуйста">
               <label for="your-phone">Номер телефона</label>
+              <input class="form__input-phone" type="tel" id="your-phone" name="phone" placeholder="Номер, пожалуйста">
             </li>
             <li class="form__item-contacts">
+              <label for="your-email">Адрес почты</label>
               <input class="form__input-email" type="email" id="your-email" name="email" placeholder="Введите почту *"
                 required>
-              <label for="your-email">Адрес почты</label>
             </li>
           </ul>
         </fieldset>
@@ -124,19 +128,18 @@
         <fieldset class="form__feedback">
           <legend class="form__feedback-title">Опишите свои эмоции</legend>
           <textarea class="form__feedback-text" name="text-letter" cols="30" rows="10"
-            placeholder="Можно прям в красках, не стесняясь в выражениях">
-        </textarea>
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <button class="form__button-send" type="submit">Отправить форму</button>
-        <p>* - обязательные поля</p>
+        <p class="form__note">* - обязательные поля</p>
       </form>
     </section>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo" href="#">
-      <img class="page-footer__logo-image" src="https://via.placeholder.com/74x23" alt="Логотип приложение Pink"
-        width="74" height="23">
+    <a class="page-footer__logo" href="index.html">
+      <img class="page-footer__logo-image" src="img/content/mobile/footer-logo.svg" alt="Логотип приложение Pink"
+        width="145" height="40">
     </a>
     <ul class="social-list">
       <li class="social-list__item">
