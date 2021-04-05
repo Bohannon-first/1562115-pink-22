@@ -1,11 +1,30 @@
 .promo {
-  background-image: url("../img/background/mobile/bgc-promo-mobile.jpg");
-  background-color: @basic-bgc-promo;
+
+  background-image: url("../img/background/mobile/bgc-mobile.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-color: @basic-bgc-promo;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+    height: 462px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 940px;
+  }
 }
 
 .promo__list {
+  display: flex;
   list-style: none;
 }
 
@@ -14,6 +33,21 @@
   line-height: 29px;
   font-weight: 300;
   color: @basic-white;
+  margin: 0;
+}
+
+// @media (min-width: @tablet-width) {
+//   .promo__image {
+//     align-self: flex-end;
+//     float: right;
+//   }
+// }
+
+@media (min-width: @tablet-width) {
+  .promo__image {
+    position: absolute;
+    left: 50%;
+  }
 }
 
 .promo__download {
@@ -28,4 +62,5 @@
   line-height: 24px;
   font-weight: 300;
   color: @basic-white;
+  margin: 0;
 }
