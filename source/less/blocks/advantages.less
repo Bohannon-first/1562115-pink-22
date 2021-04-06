@@ -46,6 +46,14 @@
   }
 }
 
+.advantages__picture {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
 .advantages__title {
   font-size: 18px;
   font-weight: 700;
@@ -80,7 +88,7 @@
 
 .advantages__research {
   display: none;
-  background-image: url(../img/background/mobile/24hours.png);
+  background-image: url("../img/background/mobile/24hours.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 238px 276px;

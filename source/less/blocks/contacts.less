@@ -1,3 +1,20 @@
+.contacts__wrapper {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+  }
+
+  .contacts__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 940px;
+  }
+}
+
 .contacts__title {
   font-size: 24px;
   line-height: 29px;
@@ -42,4 +59,17 @@
   line-height: 33px;
   font-weight: 300;
   color: @basic-red;
+}
+
+.contacts__map-image {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    height: auto;
+  }
 }
