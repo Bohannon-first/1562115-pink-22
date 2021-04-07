@@ -45,8 +45,6 @@
     <section class="promo">
       <div class="promo__wrapper">
         <h1 class="promo__title">Взгляните на жизнь иначе!</h1>
-        <img class="promo__image" src="img/content/mobile/hand-phone.png"
-          alt="Изображение телефона с установленным приложением Pink" width="320" height="286">
         <a class="promo__download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
         <ul class="promo__list">
           <li class="promo__item">
@@ -162,21 +160,27 @@
           <tbody>
             <tr>
               <td class="tariffs__included-title">Розовый фильтр</td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="tariffs__feature tariffs__feature-yes"></td>
+              <td class="tariffs__feature-yes">
+                <span class="tariffs__feature-name">Розовый фильтр</span>
+              </td>
+              <td class="tariffs__feature tariffs__feature-yes"></td>
             </tr>
             <tr>
               <td class="tariffs__included-title">Смайлики</td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="tariffs__feature tariffs__feature-no"></td>
+              <td class="tariffs__feature-yes">
+                <span class="tariffs__feature-name">Смайлики</span>
+              </td>
+              <td class="tariffs__feature tariffs__feature-yes"></td>
             </tr>
             <tr>
               <td class="tariffs__included-title">Комментарии</td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="tariffs__feature tariffs__feature-no"></td>
+              <td class="tariffs__feature-no">
+                <span class="tariffs__feature-name">Комментарии</span>
+              </td>
+              <td class="tariffs__feature tariffs__feature-yes"></td>
             </tr>
           </tbody>
         </table>
@@ -204,21 +208,22 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
-        <p class="contacts__item contacts__phone">Звоните:
-          <a class="contacts__phone-link" href="tel:+78125556666">
-            +7 (812) 555-66-66
-          </a>
-        </p>
-        <p class="contacts__item contacts__mail">Пишите:
-          <a class="contacts__mail-link" href="mailto:mail@htmlacademy.ru">
-            mail@htmlacademy.ru
-          </a>
-        </p>
-        <p class="contacts__item contacts__address">
-          <span>Приезжайте в гости:</span>
-          ул. Большая Конюшенная, 19/8
-        </p>
-
+        <div class="contacts__list">
+          <p class="contacts__item contacts__phone">Звоните:
+            <a class="contacts__phone-link" href="tel:+78125556666">
+              +7 (812) 555-66-66
+            </a>
+          </p>
+          <p class="contacts__item contacts__mail">Пишите:
+            <a class="contacts__mail-link" href="mailto:mail@htmlacademy.ru">
+              mail@htmlacademy.ru
+            </a>
+          </p>
+          <p class="contacts__item contacts__address">
+            <span>Приезжайте в гости:</span>
+            ул. Большая<br> Конюшенная, 19/8
+          </p>
+        </div>
         <a class="contacts__map-link" href="#">
           <img class="contacts__map-image" src="img/content/map.svg" width="320" height="200"
             alt="Карта местонаходения офиса HTML Academy по адресу: г. Санкт-Петербург, ул. Конюшенная, д. 19/8">

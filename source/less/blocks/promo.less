@@ -1,15 +1,30 @@
 .promo {
-
-  background-image: url("../img/background/mobile/bgc-mobile.jpg");
+  background-image: url("../img/background/mobile/bgc-promo-mobile.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-color: @basic-bgc-promo;
+  min-height: 462px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/background/tablet/bgc-promo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/background/desktop/bgc-promo-desktop.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
 
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    align-items: center;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -36,17 +51,9 @@
   margin: 0;
 }
 
-// @media (min-width: @tablet-width) {
-//   .promo__image {
-//     align-self: flex-end;
-//     float: right;
-//   }
-// }
-
 @media (min-width: @tablet-width) {
   .promo__image {
-    position: absolute;
-    left: 50%;
+    display: none;
   }
 }
 

@@ -16,6 +16,14 @@
 
 .tariffs__list {
   border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .tariffs__list td {
@@ -52,8 +60,60 @@
 
 .tariffs__toggles {
   display: flex;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.tariffs__feature-yes {
+  background-image: url("../img/icons/table-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.tariffs__feature-no {
+  background-image: url("../img/icons/table-no.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.tariffs__feature-name {
+  display: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .tariffs__list {
+    width: 100%;
+  }
+
+  .tariffs__title {
+    display: none;
+  }
+
+  .tariffs__title-hit {
+    display: block;
+    width: 100%;
+  }
+
+  .tariffs__included-title {
+    display: none;
+  }
+
+  .tariffs__feature {
+    display: none;
+  }
+
+  .tariffs__feature-name {
+    display: block;
+  }
+
+  .tariffs__feature-yes {
+    background-position: center right;
+  }
+
+  .tariffs__feature-no {
+    background-position: center right;
   }
 }

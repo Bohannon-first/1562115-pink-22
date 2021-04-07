@@ -21,6 +21,10 @@
   line-height: 29px;
   font-weight: 300;
 
+  @media (max-width: @mobile-width-only) {
+    text-align: center;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 54.5px;
@@ -75,6 +79,11 @@
 }
 
 .advantages__image {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    margin: 0 auto;
+  }
+
   @media (min-width: @tablet-width) {
     order: -1;
     width: 268px;
