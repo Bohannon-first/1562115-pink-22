@@ -9,7 +9,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
+
     width: 940px;
   }
 }
@@ -20,10 +20,7 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-
-  @media (max-width: @mobile-width-only) {
-    text-align: center;
-  }
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -79,19 +76,17 @@
 }
 
 .advantages__image {
-  @media (max-width: @mobile-width-only) {
-    display: block;
-    margin: 0 auto;
-  }
+  display: block;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     order: -1;
     width: 268px;
     height: 547px;
+  }
 
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -106,73 +101,54 @@
     display: block;
     min-height: 330px;
     padding-left: 238px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-end;
   }
 
   @media (min-width: @desktop-width) {
     background-size: 298px 345px;
     min-height: 430px;
     padding-left: 298px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-end;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .advantages__research-title {
+.advantages__research-title {
+  @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     color: @basic-black;
     margin: 0;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .advantages__research-title {
-    font-size: 30px;
+  @media (min-width: @desktop-width) {
     line-height: 30px;
-    font-weight: 700;
-    color: @basic-black;
-    margin: 0;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .advantages__research-description {
+.advantages__research-description {
+  @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 24px;
     width: 310px;
     margin: 0;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .advantages__research-description {
+  @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
     width: 534px;
-    margin: 0;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .advantages__research-link {
+.advantages__research-link {
+  @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 24px;
     color: @basic-red;
     text-decoration: underline;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .advantages__research-link {
+  @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    color: @basic-red;
-    text-decoration: underline;
   }
 }

@@ -9,21 +9,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
     width: 940px;
   }
 }
 
 .tariffs__list {
   border-collapse: collapse;
-
-  @media (min-width: @tablet-width) {
-    width: 100%;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .tariffs__list td {
@@ -44,11 +36,29 @@
   text-transform: uppercase;
   border: 2px solid @basic-bgc-photo;
   border-radius: 1px;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.tariffs__title-hit {
+  display: block;
+  width: 100%;
 }
 
 .tariffs__title span {
   font-size: 18px;
   font-weight: 300;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .tariffs__included-title {
@@ -56,6 +66,16 @@
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    text-transform: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .tariffs__toggles {
@@ -70,50 +90,35 @@
 .tariffs__feature-yes {
   background-image: url("../img/icons/table-yes.svg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center right;
+
+  @media (min-width: @tablet-width) {
+    background-position: center center;
+  }
 }
 
 .tariffs__feature-no {
   background-image: url("../img/icons/table-no.svg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center right;
+
+  @media (min-width: @tablet-width) {
+    background-position: center center;
+  }
 }
 
 .tariffs__feature-name {
-  display: none;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
-@media (max-width: @mobile-width-only) {
-  .tariffs__list {
-    width: 100%;
-  }
+.tariffs__feature {
+  display: none;
 
-  .tariffs__title {
-    display: none;
-  }
-
-  .tariffs__title-hit {
+  @media (min-width: @tablet-width) {
     display: block;
-    width: 100%;
-  }
-
-  .tariffs__included-title {
-    display: none;
-  }
-
-  .tariffs__feature {
-    display: none;
-  }
-
-  .tariffs__feature-name {
-    display: block;
-  }
-
-  .tariffs__feature-yes {
-    background-position: center right;
-  }
-
-  .tariffs__feature-no {
-    background-position: center right;
   }
 }

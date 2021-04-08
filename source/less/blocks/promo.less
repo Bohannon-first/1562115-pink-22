@@ -21,10 +21,7 @@
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-
-  @media (max-width: @mobile-width-only) {
-    align-items: center;
-  }
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -33,7 +30,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
     width: 940px;
   }
 }
@@ -49,12 +45,6 @@
   font-weight: 300;
   color: @basic-white;
   margin: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .promo__image {
-    display: none;
-  }
 }
 
 .promo__download {
