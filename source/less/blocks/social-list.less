@@ -1,6 +1,9 @@
 .social-list {
   display: flex;
   list-style: none;
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0;
 }
 
 .social-list__item {
@@ -8,6 +11,10 @@
   height: 48px;
   border: 3px solid rgba(@basic-color-text, 10%);
   border-radius: 50%;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 14px;
 }
 
 .social-list__link {

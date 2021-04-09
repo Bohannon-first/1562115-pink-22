@@ -3,6 +3,9 @@
 }
 
 .tariffs__wrapper {
+  padding-top: 81px;
+  padding-bottom: 49px;
+
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 620px;
@@ -16,12 +19,16 @@
 .tariffs__list {
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 45px;
 }
 
 .tariffs__list td {
   background-color: @basic-white;
   border: 2px solid @basic-border;
   border-radius: 1px;
+  height: 59px;
+  padding-left: 20px;
+  padding-right: 19px;
 }
 
 .tariffs__title:not(:first-child) {
@@ -37,6 +44,12 @@
   border: 2px solid @basic-bgc-photo;
   border-radius: 1px;
   display: none;
+  text-align: center;
+  padding-top: 19px;
+  padding-bottom: 37px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     display: block;
@@ -55,6 +68,7 @@
 .tariffs__title span {
   font-size: 18px;
   font-weight: 300;
+  display: block;
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
@@ -81,6 +95,9 @@
 .tariffs__toggles {
   display: flex;
   justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -88,9 +105,11 @@
 }
 
 .tariffs__feature-yes {
+  width: 31px;
+  height: 21px;
   background-image: url("../img/icons/table-yes.svg");
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: 90% 50%;
 
   @media (min-width: @tablet-width) {
     background-position: center center;
@@ -100,7 +119,7 @@
 .tariffs__feature-no {
   background-image: url("../img/icons/table-no.svg");
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: 90% 50%;
 
   @media (min-width: @tablet-width) {
     background-position: center center;
@@ -117,6 +136,7 @@
 
 .tariffs__feature {
   display: none;
+  // min-height: 59px;
 
   @media (min-width: @tablet-width) {
     display: block;

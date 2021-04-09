@@ -1,20 +1,25 @@
 .promo {
   background-image: url("../img/background/mobile/bgc-promo-mobile.jpg");
-  background-position: 0 0;
+  background-position: center top;
   background-repeat: no-repeat;
   background-color: @basic-bgc-promo;
-  min-height: 462px;
+  background-size: 100% auto;
+  min-height: 729px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/background/tablet/bgc-promo.jpg");
+    background-image: url("../img/background/tablet/bgc-promo-tablet.jpg");
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: 729px;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/background/desktop/bgc-promo-desktop.jpg");
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: 853px;
   }
 }
 
@@ -22,6 +27,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: inherit;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -34,9 +40,26 @@
   }
 }
 
+.promo__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: inherit;
+  margin-bottom: 38px;
+}
+
 .promo__list {
   display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
   list-style: none;
+  margin-bottom: 28px;
+}
+
+.promo__item:not(:last-child) {
+  margin-right: 35px;
 }
 
 .promo__title {
@@ -45,6 +68,19 @@
   font-weight: 300;
   color: @basic-white;
   margin: 0;
+  margin-top: 95px;
+  width: 225px;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .promo__download {
@@ -52,6 +88,25 @@
   line-height: 18px;
   font-weight: 700;
   color: @basic-white;
+  width: 280px;
+  border: 3px solid @basic-white;
+  border-radius: 29px;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .promo__text {
@@ -60,4 +115,9 @@
   font-weight: 300;
   color: @basic-white;
   margin: 0;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
