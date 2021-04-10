@@ -9,6 +9,11 @@
   }
 }
 
+.reviews__item {
+  margin: 0;
+}
+
+
 .reviews__author-info {
   display: flex;
   flex-direction: column;
@@ -23,12 +28,13 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 51px;
   margin-bottom: 31px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     order: 2;
+    margin-bottom: 17px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,6 +51,7 @@
     line-height: 30px;
     order: 3;
     text-align: center;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,6 +64,7 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
@@ -68,7 +76,8 @@
   justify-content: center;
   padding: 0;
   margin: 0;
-  margin-bottom: 60px;
+  list-style: none;
+  margin-bottom: 40px;
 
   @media (min-width: @desktop-width) {
     display: none;
