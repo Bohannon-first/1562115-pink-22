@@ -1,45 +1,88 @@
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+    display: block;
+    padding-top: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding-top: 74px;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 31px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+
+    &--address {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--mail {
+      order: 3;
+    }
+  }
+}
+
 .contacts__title {
+  font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  font-weight: 300;
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 61px;
+  }
 }
 
-.contacts__phone {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
+.contacts__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
-.contacts__phone-link {
+.contacts__link {
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
   color: @basic-red;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 20px;
+  }
 }
 
-.contacts__mail {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-.contacts__mail-link {
-  font-size: 24px;
-  line-height: 33px;
-  font-weight: 300;
-  color: @basic-red;
-}
-
-.contacts__address span {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: @basic-color-text;
-}
-
-.contacts__address {
-  font-size: 24px;
-  line-height: 33px;
-  font-weight: 300;
-  color: @basic-red;
+.contacts__map-image {
+  width: 100%;
+  height: auto;
 }
