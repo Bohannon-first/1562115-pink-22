@@ -1,10 +1,31 @@
 .form__description {
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 55px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
+.form__name {
+  border: none;
+  padding: 0;
+}
+
 
 .form__list-name {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__item-name {
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 44px;
+  }
 }
 
 .form__item-name label {
@@ -12,27 +33,72 @@
   line-height: 30px;
   color: @basic-red;
   text-transform: uppercase;
+  padding-left: 23px;
+  display: block;
 }
+
+
 
 .form__input,
 .form__input::placeholder {
   font-size: 18px;
   line-height: 30px;
   color: @basic-color-text;
-  font-weight: 400;
+  width: 100%;
+  font-weight: inherit;
   font-family: inherit;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 2px solid @basic-border;
+  border-left: none;
+  border-right: none;
+  display: block;
+  box-sizing: border-box;
+}
+
+
+.form__achievements {
+  position: relative;
+  background-color: @basic-bgc-photo;
+  border: none;
+  padding: 0;
+  display: block;
+  padding-top: 42px;
+
 }
 
 .form__achievements-title {
+  position: absolute;
   font-size: 14px;
   line-height: 18px;
   color: @basic-red;
   text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 0 47px
 }
 
 .form__list-achievements {
   list-style: none;
-  background-color: @basic-bgc-photo;
+  margin: 0;
+  padding: 0;
+  margin-top: 65px;
+}
+
+.form__item-achievements {
+  margin-bottom: 47px;
+
+  &:last-child {
+    margin-bottom: 44px;
+  }
+}
+
+.form__item-achievements input {
+  margin: 0;
+  margin-right: 22px;
 }
 
 .form__item-achievements label {
@@ -40,27 +106,64 @@
   line-height: 30px;
 }
 
+.form__contacts {
+  border: none;
+  padding: 0;
+}
+
 .form__list-contacts {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 42px;
+  padding-bottom: 44px;
+}
+
+.form__item-contacts:not(:last-child) {
+  margin-bottom: 29px;
 }
 
 .form__item-contacts label {
   font-size: 14px;
   line-height: 30px;
   color: @basic-red;
+  padding-left: 24px;
   text-transform: uppercase;
+  display: block;
+}
+
+.form__choice-app {
+  position: relative;
+  background-color: @basic-bgc-photo;
+  border: none;
+  padding: 0;
+  padding-top: 42px;
+  padding-bottom: 42px;
 }
 
 .form__choice-app-title {
+  position: absolute;
   font-size: 14px;
   line-height: 18px;
   color: @basic-red;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form__list-choice-app {
   list-style: none;
-  background-color: @basic-bgc-photo;
+  margin: 0;
+  margin-top: 65px;
+  padding: 0;
+}
+
+.form__item-choice-app:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.form__input-choice-app {
+  margin: 0;
+  margin-right: 22px;
 }
 
 .form__item-choice-app label {
@@ -68,15 +171,55 @@
   line-height: 30px;
 }
 
+.form__feedback {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  border: none;
+  padding: 0;
+  padding-top: 42px;
+  padding-bottom: 52px;
+}
+
 .form__feedback-title {
+  align-self: center;
+  position: absolute;
   font-size: 14px;
   line-height: 18px;
   color: @basic-red;
   text-transform: uppercase;
+  border: none;
 }
+
+.form__input--textarea,
+.form__input--textarea::placeholder {
+  border: 1px solid @basic-border;
+  border-left: none;
+  border-radius: 1px;
+  min-height: 197px;
+  padding: 0;
+  margin-top: 32px;
+  padding-left: 12px;
+}
+
+.form__button-send {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 46px;
+}
+
 
 .form__note {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.form__note span {
+  color: @basic-red;
 }
