@@ -11,8 +11,8 @@
   text-align: center;
   margin: 0;
   margin-bottom: 55px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
@@ -32,7 +32,7 @@
 
 .form__name {
   border: none;
-  padding: 0;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -112,6 +112,8 @@
   padding: 0;
   display: block;
   padding-top: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -133,7 +135,7 @@
   text-transform: uppercase;
   text-align: center;
   display: block;
-  padding: 0 47px;
+  padding: 0 35px;
 
   @media (min-width: @tablet-width) {
     position: initial;
@@ -181,7 +183,8 @@
 
 .form__contacts {
   padding: 0;
-  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -191,6 +194,7 @@
     border: 2px solid @basic-border;
     border-radius: 1px;
     order: 3;
+    text-align: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -223,7 +227,10 @@
 .form__item-contacts {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+  }
 }
 
 .form__item-contacts:not(:last-child) {
@@ -260,6 +267,8 @@
   padding: 0;
   padding-top: 42px;
   padding-bottom: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -324,6 +333,8 @@
   padding: 0;
   padding-top: 42px;
   padding-bottom: 52px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -370,6 +381,9 @@
 }
 
 .form__footer {
+  padding-left: 20px;
+  padding-right: 20px;
+
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 620px;
