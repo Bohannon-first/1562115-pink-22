@@ -1,3 +1,10 @@
+.form__user-form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .form__description {
   font-size: 14px;
   line-height: 30px;
@@ -6,13 +13,37 @@
   margin-bottom: 55px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding-left: 85px;
+    padding-right: 85px;
+    order: 0;
+  }
+}
+
+.form__description span {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .form__name {
   border: none;
   padding: 0;
-}
 
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
 
 .form__list-name {
   list-style: none;
@@ -26,6 +57,11 @@
   &:last-child {
     margin-bottom: 44px;
   }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .form__item-name label {
@@ -35,9 +71,12 @@
   text-transform: uppercase;
   padding-left: 23px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+    padding-left: 0;
+  }
 }
-
-
 
 .form__input,
 .form__input::placeholder {
@@ -50,15 +89,21 @@
   padding: 0;
   padding-top: 13px;
   padding-bottom: 13px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 22px;
+  padding-right: 22px;
   border: 2px solid @basic-border;
-  border-left: none;
-  border-right: none;
   display: block;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
 }
 
+.form__input::placeholder {
+  border: none;
+  padding: 0;
+}
 
 .form__achievements {
   position: relative;
@@ -68,6 +113,16 @@
   display: block;
   padding-top: 42px;
 
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 65px;
+    width: 620px;
+    position: initial;
+    order: 5;
+    border: 2px solid @basic-border;
+    padding-top: 0;
+    background-color: @basic-white;
+  }
 }
 
 .form__achievements-title {
@@ -78,7 +133,13 @@
   text-transform: uppercase;
   text-align: center;
   display: block;
-  padding: 0 47px
+  padding: 0 47px;
+
+  @media (min-width: @tablet-width) {
+    position: initial;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
 }
 
 .form__list-achievements {
@@ -86,6 +147,12 @@
   margin: 0;
   padding: 0;
   margin-top: 65px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    padding-left: 60px;
+  }
 }
 
 .form__item-achievements {
@@ -93,6 +160,12 @@
 
   &:last-child {
     margin-bottom: 44px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -107,8 +180,36 @@
 }
 
 .form__contacts {
-  border: none;
   padding: 0;
+  text-align: center;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+    margin-bottom: 65px;
+    border: 2px solid @basic-border;
+    border-radius: 1px;
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.form__contacts-title {
+  display: none;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding-left: 31px;
+    padding-right: 31px;
+    color: @basic-red;
+  }
 }
 
 .form__list-contacts {
@@ -117,6 +218,12 @@
   padding: 0;
   padding-top: 42px;
   padding-bottom: 44px;
+}
+
+.form__item-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form__item-contacts:not(:last-child) {
@@ -130,6 +237,20 @@
   padding-left: 24px;
   text-transform: uppercase;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    align-self: flex-start;
+    padding-left: 80px;
+  }
+}
+
+.form__item-contacts input {
+  @media (min-width: @tablet-width) {
+    width: 496px;
+    order: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .form__choice-app {
@@ -139,6 +260,17 @@
   padding: 0;
   padding-top: 42px;
   padding-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+    position: initial;
+    order: 2;
+    border: 2px solid @basic-border;
+    background-color: @basic-white;
+    padding: 0;
+    margin-bottom: 70px;
+  }
 }
 
 .form__choice-app-title {
@@ -148,6 +280,12 @@
   color: @basic-red;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    position: initial;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 
 .form__list-choice-app {
@@ -155,6 +293,12 @@
   margin: 0;
   margin-top: 65px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 54px;
+    margin-bottom: 54px;
+    padding-left: 60px;
+  }
 }
 
 .form__item-choice-app:not(:last-child) {
@@ -180,6 +324,16 @@
   padding: 0;
   padding-top: 42px;
   padding-bottom: 52px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    width: 620px;
+    position: initial;
+    border: 2px solid @basic-border;
+    padding-top: 0;
+    order: 5;
+  }
 }
 
 .form__feedback-title {
@@ -190,17 +344,39 @@
   color: @basic-red;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    position: initial;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
 }
 
-.form__input--textarea,
-.form__input--textarea::placeholder {
-  border: 1px solid @basic-border;
-  border-left: none;
+.form__input--textarea {
+  border: 2px solid @basic-border;
+  width: 100%;
   border-radius: 1px;
   min-height: 197px;
   padding: 0;
-  margin-top: 32px;
   padding-left: 12px;
+  margin-top: 32px;
+  resize: none;
+
+  @media (min-width: @tablet-width) {
+    width: 496px;
+    align-self: center;
+    margin-top: 42px;
+  }
+}
+
+.form__footer {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    order: 6;
+  }
 }
 
 .form__button-send {
@@ -208,8 +384,12 @@
   padding: 15px;
   box-sizing: border-box;
   margin-bottom: 46px;
-}
 
+  @media (min-width: @tablet-width) {
+    width: 296px;
+    margin-bottom: 50px;
+  }
+}
 
 .form__note {
   font-size: 14px;
