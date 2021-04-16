@@ -11,14 +11,20 @@
   text-align: center;
   margin: 0;
   margin-bottom: 55px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
+
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 82px;
+    width: 620px;
     font-size: 18px;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding: 0;
     order: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
   }
 }
 
@@ -28,14 +34,26 @@
   @media (min-width: @tablet-width) {
     display: block;
   }
+
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
 }
 
 .form__name {
   border: none;
   padding: 0 20px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+    padding: 0;
     order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
   }
 }
 
@@ -107,15 +125,21 @@
   padding-top: 42px;
   padding-left: 20px;
   padding-right: 20px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin: 0 20px;
+    margin: 0 auto;
+    width: 620px;
     margin-bottom: 65px;
     padding: 0;
     position: initial;
     order: 5;
     border: 2px solid @basic-border;
     background-color: @basic-white;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
   }
 }
 
@@ -176,15 +200,21 @@
 .form__contacts {
   padding: 0 20px;
   border: none;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin: 0 20px;
+    margin: 0 auto;
+    width: 620px;
     margin-bottom: 65px;
-    padding: 0 60px;
+    padding: 0;
     border: 2px solid @basic-border;
     border-radius: 1px;
     order: 3;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
   }
 }
 
@@ -234,12 +264,13 @@
   @media (min-width: @tablet-width) {
     order: 1;
     align-self: flex-start;
+    padding-left: 80px;
   }
 }
 
 .form__item-contacts input {
   @media (min-width: @tablet-width) {
-    min-width: 496px;
+    width: 496px;
     order: 0;
     margin-bottom: 10px;
   }
@@ -253,15 +284,21 @@
   padding-bottom: 42px;
   padding-left: 20px;
   padding-right: 20px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin: 0 20px;
+    margin: 0 auto;
+    width: 620px;
     padding: 0;
     position: initial;
     order: 2;
     border: 2px solid @basic-border;
     background-color: @basic-white;
     margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
   }
 }
 
@@ -317,15 +354,20 @@
   padding-bottom: 52px;
   padding-left: 20px;
   padding-right: 20px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin: 0 20px;
+    margin: 0 auto;
+    width: 620px;
     margin-bottom: 70px;
-    padding: 0 60px;
-    padding-bottom: 53px;
+    padding: 0;
     position: initial;
     border: 2px solid @basic-border;
     order: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
   }
 }
 
@@ -347,18 +389,19 @@
 
 .form__input--textarea {
   border: 2px solid @basic-border;
-  width: 100%;
   border-radius: 1px;
   min-height: 197px;
   padding: 0;
   padding-left: 12px;
+  padding-top: 12px;
   margin-top: 32px;
   resize: none;
 
   @media (min-width: @tablet-width) {
-    min-width: 496px;
+    width: 496px;
     align-self: center;
     margin-top: 42px;
+    margin-bottom: 53px;
   }
 }
 
@@ -366,9 +409,16 @@
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     order: 6;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
   }
 }
 
