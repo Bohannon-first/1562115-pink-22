@@ -1,63 +1,60 @@
+//Общие свойства
 .modal {
   z-index: 2;
   position: fixed;
-  right: 0;
-  left: 0;
-  margin: auto;
   background-color: @basic-white;
-}
-
-.modal h3 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: @basic-black;
-
-  @media (min-width: @tablet-width) {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-
-.modal p {
-  font-size: 14px;
-  line-height: 24px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 18px;
-  }
-}
-
-.modal__error {
-  display: none;
   top: 50%;
-  margin-top: -145px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 320px;
-  padding-top: 42px;
   text-align: center;
   box-sizing: border-box;
   box-shadow: 0 7px 15px 0 @basic-modal-shadow;
   border-radius: 1px;
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @basic-black;
+}
+
+.modal__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.modal__button {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+// Окно об ошибке
+.modal--error {
+  display: none;
+  padding-top: 42px;
 
   @media (min-width: @tablet-width) {
     width: 460px;
     padding-top: 47px;
     border-radius: 5px;
-    margin-top: -181px;
   }
 
   @media (min-width: @desktop-width) {
     width: 780px;
-    margin-top: -125px;
   }
 }
 
-.modal__error-title {
+.modal__title--error {
   margin: 0;
   margin-bottom: 30px;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
     padding: 0 115px;
     margin-bottom: 25px;
   }
@@ -67,12 +64,13 @@
   }
 }
 
-.modal__error-text {
+.modal__text--error {
   margin: 0;
   margin-bottom: 40px;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
+    font-size: 18px;
     padding: 0 80px;
     margin-bottom: 34px;
   }
@@ -83,13 +81,13 @@
   }
 }
 
-.modal__error-wrapper {
+.modal__wrapper-button-error {
   padding: 0 20px;
   padding-bottom: 45px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 0 80px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
@@ -98,43 +96,31 @@
   }
 }
 
-.modal__error-button {
-  width: 100%;
-  text-align: center;
-  padding: 15px;
-}
-
-.modal__send {
+// Окно об отправке
+.modal--send {
   display: none;
-  top: 50%;
-  margin-top: -190px;
-  width: 320px;
   padding-top: 34px;
-  text-align: center;
-  box-sizing: border-box;
-  box-shadow: 0 7px 15px 0 @basic-modal-shadow;
-  border-radius: 1px;
 
   @media (min-width: @tablet-width) {
     width: 460px;
     padding-top: 39px;
     border-radius: 5px;
-    margin-top: -216px;
   }
 
   @media (min-width: @desktop-width) {
     width: 780px;
-    margin-top: -188px;
   }
 }
 
-.modal__send-title {
-  padding: 0 20px;
+.modal__title--send {
   margin: 0;
   margin-bottom: 27px;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0 83px;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -142,12 +128,13 @@
   }
 }
 
-.modal__send-text {
-  padding: 0 20px;
+.modal__text--send {
   margin: 0;
   margin-bottom: 37px;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
+    font-size: 18px;
     padding: 0 65px;
     margin-bottom: 30px;
   }
@@ -158,7 +145,7 @@
   }
 }
 
-.modal__send-wrapper {
+.modal__wrapper-button-send {
   background-color: @basic-bgc-photo;
   padding: 51px 20px;
 
@@ -169,10 +156,4 @@
   @media (min-width: @desktop-width) {
     padding: 52px 162px;
   }
-}
-
-.modal__send-button {
-  width: 100%;
-  text-align: center;
-  padding: 15px;
 }

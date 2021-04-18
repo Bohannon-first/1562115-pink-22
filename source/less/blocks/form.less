@@ -578,21 +578,17 @@
   text-align: center;
   margin: 0;
   padding-bottom: 20px;
+}
 
-  &--snowflake {
-    color: @basic-red;
-  }
+.form__note-snowflake {
+  color: @basic-red;
+}
 
-  &--long {
-    display: none;
-  }
+.form__note-long {
+  display: none;
 
   @media (min-width: @desktop-width) {
-    padding: 0;
-
-    &--long {
-      display: initial;
-      color: @basic-color-text;
-    }
+    display: initial;
+    color: @basic-color-text;
   }
 }
