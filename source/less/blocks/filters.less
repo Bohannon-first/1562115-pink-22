@@ -6,6 +6,68 @@
   font-size: 14px;
   line-height: 30px;
   background-color: @basic-white;
+  margin: 0;
+  padding: 0 20px;
+  padding-bottom: 42px;
+  margin-top: 39px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filters__form-wrapper {
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.filters__image {
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.filters__range-control-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filters__button-cut {
+  width: 44px;
+  height: 44px;
+  border: none;
+}
+
+.filters__button-coloring {
+  width: 48px;
+  height: 43px;
+  border: none;
+}
+
+.filters__button-brightness {
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+.filters__button-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 38px;
+  padding-bottom: 41px;
+  border-top: 1px solid fade(@basic-color-text, 10%);
 }
 
 .filters__button {
@@ -13,9 +75,15 @@
   line-height: 18px;
   font-weight: 700;
   font-family: inherit;
-  color: @basic-color-text;
+  text-align: center;
+  padding: 16px 16px;
+  margin: 0 20px;
+  box-sizing: border-box;
+  border-radius: 40px;
 
   &--send {
     color: @basic-red;
+    border: 3px solid @basic-red;
+    margin-bottom: 12px;
   }
 }
