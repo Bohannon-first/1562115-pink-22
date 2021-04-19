@@ -51,19 +51,20 @@
       </p>
       <ul class="gallery__list">
         <li class="gallery__item gallery__item--main">
-          <a class="gallery__link" href="#">
+          <a class="gallery__link gallery__link--main" href="#">
             <img class="gallery__image gallery__image--main" src="img/content/mobile/panorama.jpg"
               alt="Панорамная фотография с изображением леса, скал, реки" width="320" height="137">
           </a>
           <blockquote class="gallery__review gallery__review--main">
-            <div class="gallery__wrapper-author">
+            <div class="gallery__wrapper-author gallery__wrapper-author--main">
               <cite class="gallery__author-name">Анна</cite>
               <span class="gallery__time">(5 минут назад)</span>
             </div>
-            <p class="gallery__author-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+            <p class="gallery__author-text gallery__author-text--main">Прыгать или нет? Напишите в комментарии свой
+              совет и смотрите прямую
               трансляцию в перископе, задавайте свои вопросы!
             </p>
-            <div class="gallery__wrapper-button">
+            <div class="gallery__wrapper-button gallery__wrapper-button--main">
               <button class="gallery__button-likes gallery__button-likes--main" type="button"></button>
               <span class="gallery__counter-likes">Нравится: 215</span>
             </div>
@@ -189,7 +190,7 @@
             <img class="filters__image" src="img/content/mobile/winter.jpg"
               alt="Фотография зимнего пейзажа с заснеженной дорогой" width="280" height="374">
           </a>
-          <div class="filters__range-control-container">
+          <div class="filters__range-control-list">
             <div class="filters__range-control">
               <div class="filters__range-line"></div>
               <div class="filters__toggle" tabindex="0" aria-label="Ползунок регулирования размера фотографии">
@@ -241,12 +242,11 @@
               </button>
             </div>
           </div>
+          <div class="filters__button-container">
+            <button class="filters__button filters__button--send" type="submit">Запостить</button>
+            <button class="filters__button filters__button--cancel" type="button">Отмена</button>
+          </div>
         </div>
-        <div class="filters__button-container">
-          <button class="filters__button filters__button--send" type="submit">Запостить</button>
-          <button class="filters__button filters__button--cancel" type="button">Отмена</button>
-        </div>
-
       </form>
     </section>
   </main>

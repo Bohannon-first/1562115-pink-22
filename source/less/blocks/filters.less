@@ -12,6 +12,13 @@
   margin-top: 39px;
   margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin-top: 70px;
+    margin-bottom: 57px;
+    padding-bottom: 70px;
+  }
 }
 
 .filters__form-wrapper {
@@ -19,8 +26,13 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 47px;
     margin: 0 auto;
     width: 620px;
+    padding: 0;
+    padding-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,14 +46,23 @@
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 400px;
+    margin-bottom: 0;
   }
 }
 
-.filters__range-control-container {
+.filters__range-control-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 .filters__button-cut {
@@ -68,6 +89,15 @@
   padding-top: 38px;
   padding-bottom: 41px;
   border-top: 1px solid fade(@basic-color-text, 10%);
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: flex-end;
+    padding: 0;
+  }
 }
 
 .filters__button {
@@ -77,7 +107,6 @@
   font-family: inherit;
   text-align: center;
   padding: 16px 16px;
-  margin: 0 20px;
   box-sizing: border-box;
   border-radius: 40px;
 
@@ -85,5 +114,9 @@
     color: @basic-red;
     border: 3px solid @basic-red;
     margin-bottom: 12px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
   }
 }
