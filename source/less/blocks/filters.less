@@ -65,10 +65,27 @@
   }
 }
 
+.filters__range-control {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 72px;
+    border-bottom: 1px solid fade(@basic-color-text, 10%);
+  }
+}
+
 .filters__button-cut {
   width: 44px;
   height: 44px;
   border: none;
+}
+
+.filters__button-cut svg {
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .filters__button-coloring {
@@ -77,10 +94,24 @@
   border: none;
 }
 
+.filters__button-coloring svg {
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+}
+
 .filters__button-brightness {
   width: 32px;
   height: 32px;
   border: none;
+}
+
+.filters__button-brightness svg {
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .filters__button-container {
@@ -97,6 +128,7 @@
     grid-row-end: 2;
     justify-content: flex-end;
     padding: 0;
+    border: none;
   }
 }
 
@@ -110,13 +142,17 @@
   box-sizing: border-box;
   border-radius: 40px;
 
-  &--send {
-    color: @basic-red;
-    border: 3px solid @basic-red;
-    margin-bottom: 12px;
-  }
-
   @media (min-width: @tablet-width) {
     width: 260px;
+  }
+}
+
+.filters__button--send {
+  color: @basic-red;
+  border: 3px solid @basic-red;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
   }
 }
