@@ -27,7 +27,6 @@
   margin: 0;
 }
 
-
 .reviews__author-info {
   display: flex;
   flex-direction: column;
@@ -103,6 +102,11 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
 }
 
 .reviews__button-next {
@@ -117,6 +121,11 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
 }
 
 .reviews__toggles {
