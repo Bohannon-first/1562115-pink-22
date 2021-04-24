@@ -106,6 +106,7 @@
   background-image: url("../img/icons/left-arrow.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  opacity: 30%;
   width: 22px;
   height: 41px;
   border: none;
@@ -125,6 +126,7 @@
   background-image: url("../img/icons/right-arrow.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  opacity: 30%;
   width: 22px;
   height: 41px;
   border: none;
@@ -135,6 +137,18 @@
   @media (min-width: @desktop-width) {
     display: initial;
   }
+}
+
+.reviews__button-prev:hover,
+.reviews__button-prev:focus,
+.reviews__button-next:hover,
+.reviews__button-next:focus {
+  opacity: 60%;
+}
+
+.reviews__button-prev:active,
+.reviews__button-next:active {
+  opacity: 10%;
 }
 
 .reviews__toggles {

@@ -1,9 +1,17 @@
 .tariffs {
-  background-color: @basic-bgc-photo;
+  background-image: linear-gradient(357deg, @basic-bgc-photo 94%, @basic-white 94%, @basic-white 100%);
+
+  @media (min-width: @tablet-width) {
+    background-image: linear-gradient(356deg, @basic-bgc-photo 87%, @basic-white 87%, @basic-white 100%);
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(355deg, @basic-bgc-photo 82%, @basic-white 82%, @basic-white 100%);
+  }
 }
 
 .tariffs__wrapper {
-  padding-top: 81px;
+  padding-top: 95px;
   padding-bottom: 49px;
 
   @media (min-width: @tablet-width) {
@@ -14,6 +22,7 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    padding-top: 140px;
   }
 }
 
@@ -76,7 +85,7 @@
     left: -25px;
     width: 104px;
     height: 23px;
-    content: 'Хит';
+    content: "Хит";
     background-color: @basic-red;
     color: @basic-white;
     font-size: 14px;
