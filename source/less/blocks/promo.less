@@ -5,6 +5,7 @@
   background-color: @basic-bgc-promo;
   background-size: 100% auto;
   min-height: 729px;
+  margin-top: -75px;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/background/tablet/bgc-promo-tablet.jpg");
@@ -12,6 +13,7 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     min-height: 725px;
+    margin-top: -110px;
   }
 
   @media (min-width: @desktop-width) {
@@ -28,6 +30,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 560px;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -37,6 +40,7 @@
     margin: 0 auto;
     width: 620px;
     min-height: inherit;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,7 +54,7 @@
   align-items: center;
   justify-content: flex-end;
   min-height: inherit;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     justify-content: center;
@@ -67,7 +71,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 38px;
@@ -88,7 +92,7 @@
   font-weight: 300;
   color: @basic-white;
   margin: 0;
-  margin-top: 95px;
+  margin-top: 89px;
   width: 225px;
   text-align: center;
 
@@ -96,8 +100,8 @@
     font-size: 40px;
     line-height: 48px;
     margin-left: 57px;
-    margin-top: 130px;
-    margin-bottom: 39px;
+    margin-top: 150px;
+    margin-bottom: 14px;
     width: 190px;
   }
 
@@ -106,8 +110,8 @@
     line-height: 68px;
     width: 236px;
     margin-left: 34px;
-    margin-top: 110px;
-    margin-bottom: 35px;
+    margin-top: 112px;
+    margin-bottom: 24px;
   }
 }
 
@@ -118,7 +122,7 @@
   color: @basic-white;
   width: 280px;
   border: 3px solid @basic-white;
-  border-radius: 29px;
+  border-radius: 40px;
   text-align: center;
   padding-top: 21px;
   padding-bottom: 21px;
@@ -126,6 +130,16 @@
   padding-right: 15px;
   margin-bottom: 23px;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    background-color: @basic-white;
+    color: @basic-red;
+  }
+
+  &:active {
+    color: fade(@basic-red, 30%);
+  }
 
   @media (min-width: @tablet-width) {
     width: 300px;

@@ -2,12 +2,15 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 620px;
     display: block;
     padding-top: 55px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -76,6 +79,16 @@
   line-height: 33px;
   font-weight: 300;
   color: @basic-red;
+
+  &:hover,
+  &:focus {
+    color: @basic-color-text;
+  }
+
+  &:active {
+    color: fade(@basic-color-text, 30%);
+  }
+
 
   @media (min-width: @desktop-width) {
     margin-top: 20px;

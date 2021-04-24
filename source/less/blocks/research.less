@@ -2,9 +2,12 @@
   display: none;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     display: block;
     background-color: @basic-white;
     margin-bottom: 109px;
+    margin-top: -65px;
+    z-index: 5;
   }
 
   @media (min-width: @desktop-width) {
@@ -23,7 +26,7 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 620px;
-    min-height: 330px;
+    min-height: 340px;
     padding-left: 310px;
     padding-bottom: 29px;
     display: flex;
@@ -38,6 +41,7 @@
     min-height: 430px;
     padding-left: 369px;
     padding-bottom: 120px;
+    margin-top: 60px;
   }
 }
 
