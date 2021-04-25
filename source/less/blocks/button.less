@@ -9,4 +9,17 @@
   border: none;
   border-radius: 3px;
   box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @basic-btn-hover-active;
+  }
+
+  &:active {
+    color: fade(@basic-white, 30%);
+  }
+
+  &:disabled {
+    background-color: @basic-border;
+  }
 }

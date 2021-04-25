@@ -134,6 +134,23 @@
   }
 }
 
+.main-nav__item--current {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    padding-bottom: 13px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 2px;
+      background-color: @basic-white;
+    }
+  }
+}
+
 .main-nav__link {
   position: relative;
   line-height: 32px;
