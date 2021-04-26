@@ -5,6 +5,10 @@
   }
 }
 
+.form fieldset {
+  border-radius: 3px;
+}
+
 .form__user-form {
   @media (min-width: @tablet-width) {
     display: flex;
@@ -144,8 +148,8 @@
   border: 2px solid @basic-border;
   display: block;
   box-sizing: border-box;
-  border-radius: 2px;
   cursor: pointer;
+  border-radius: 3px;
 
   @media (min-width: @tablet-width) {
     padding-left: 20px;
@@ -159,6 +163,7 @@
 
 .form__input:active {
   border-color: @basic-red;
+  outline: none;
 }
 
 .form__input::placeholder {
@@ -300,7 +305,7 @@
   width: 35px;
   height: 35px;
   border: 2px solid @basic-border;
-  border-radius: 1px;
+  border-radius: 3px;
   background-color: @basic-white;
 }
 
@@ -421,7 +426,7 @@
 }
 
 .form__item-contacts input {
-  border-radius: 1px;
+  border-radius: 3px;
 
   @media (min-width: @tablet-width) {
     width: 496px;
@@ -441,10 +446,10 @@
     &::after {
       position: absolute;
       content: "";
-      top: 0;
-      right: 0;
-      width: 59px;
-      height: 59px;
+      top: 2px;
+      right: 2px;
+      width: 57px;
+      height: 56px;
       background-image: url("../img/icons/phone-icon.svg");
       background-repeat: no-repeat;
       background-position: center center;
@@ -460,10 +465,10 @@
     &::after {
       position: absolute;
       content: "";
-      top: 0;
-      right: 0;
-      width: 59px;
-      height: 59px;
+      top: 2px;
+      right: 2px;
+      width: 57px;
+      height: 56px;
       background-image: url("../img/icons/mail-icon.svg");
       background-repeat: no-repeat;
       background-position: center center;
@@ -637,7 +642,7 @@
 
 .form__input--textarea {
   border: 2px solid @basic-border;
-  border-radius: 1px;
+  border-radius: 3px;
   height: 197px;
   padding: 0;
   padding-left: 12px;
