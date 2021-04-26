@@ -30,7 +30,7 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фотографии</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--current">
             <a class="main-nav__link" href="#">Конкурс</a>
           </li>
           <li class="main-nav__item">
@@ -75,27 +75,32 @@
           <legend class="form__achievements-title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form__list-achievements">
             <li class="form__item-achievements form__item-achievements--selfie">
-              <input class="form__input-achievement" type="checkbox" id="selfie" name="shark-selfie" checked>
+              <input class="visually-hidden form__input-achievement" type="checkbox" id="selfie" name="shark-selfie"
+                checked>
               <label for="selfie">Сделал селфи с акулой</label>
             </li>
             <li class="form__item-achievements form__item-achievements--beach">
-              <input class="form__input-achievement" type="checkbox" id="beach" name="burned-beach" checked>
+              <input class="visually-hidden form__input-achievement" type="checkbox" id="beach" name="burned-beach"
+                checked>
               <label for="beach">Обгорел на пляже</label>
             </li>
             <li class="form__item-achievements form__item-achievements--norris">
-              <input class="form__input-achievement" type="checkbox" id="chuck-norris" name="see-chuck-norris">
+              <input class="visually-hidden form__input-achievement" type="checkbox" id="chuck-norris"
+                name="see-chuck-norris">
               <label for="chuck-norris">Видел Чака Норриса</label>
             </li>
             <li class="form__item-achievements form__item-achievements--souvenirs">
-              <input class="form__input-achievement" type="checkbox" id="souvenirs" name="buying-souvenirs">
+              <input class="visually-hidden form__input-achievement" type="checkbox" id="souvenirs"
+                name="buying-souvenirs">
               <label for="souvenirs">Накупил сувениров</label>
             </li>
             <li class="form__item-achievements form__item-achievements--tower">
-              <input class="form__input-achievement" type="checkbox" id="tower" name="hold-tower" checked>
+              <input class="visually-hidden form__input-achievement" type="checkbox" id="tower" name="hold-tower"
+                checked>
               <label for="tower">Удержал башню</label>
             </li>
             <li class="form__item-achievements form__item-achievements--hotel">
-              <input class="form__input-achievement" type="checkbox" id="hotel" name="smash-hotel">
+              <input class="visually-hidden form__input-achievement" type="checkbox" id="hotel" name="smash-hotel">
               <label for="hotel">Разгромил отель</label>
             </li>
           </ul>
@@ -105,12 +110,16 @@
           <ul class="form__list-contacts">
             <li class="form__item-contacts">
               <label for="your-phone">Номер телефона</label>
-              <input class="form__input" type="tel" id="your-phone" name="phone" placeholder="Номер, пожалуйста">
+              <div class="form__input-name-wrapper">
+                <input class="form__input" type="tel" id="your-phone" name="phone" placeholder="Номер, пожалуйста">
+              </div>
             </li>
             <li class="form__item-contacts">
               <label for="your-email">Адрес почты</label>
-              <input class="form__input" type="email" id="your-email" name="email" placeholder="Введите почту *"
-                required>
+              <div class="form__input-email-wrapper">
+                <input class="form__input" type="email" id="your-email" name="email" placeholder="Введите почту *"
+                  required>
+              </div>
             </li>
           </ul>
         </fieldset>
@@ -118,15 +127,18 @@
           <legend class="form__choice-app-title">С каким приложением путешествовали?</legend>
           <ul class="form__list-choice-app">
             <li class="form__item-choice-app">
-              <input class="form__input-choice-app" type="radio" id="pink-iOS" name="type-pink" value="for-iOS" checked>
+              <input class="visually-hidden form__input-choice-app" type="radio" id="pink-iOS" name="type-pink"
+                value="for-iOS" checked>
               <label for="pink-iOS">Pink для iOS</label>
             </li>
             <li class="form__item-choice-app">
-              <input class="form__input-choice-app" type="radio" id="pink-Android" name="type-pink" value="for-Android">
+              <input class="visually-hidden form__input-choice-app" type="radio" id="pink-Android" name="type-pink"
+                value="for-Android">
               <label for="pink-Android">Pink на Android</label>
             </li>
             <li class="form__item-choice-app">
-              <input class="form__input-choice-app" type="radio" id="pink-Windows" name="type-pink" value="for-Windows">
+              <input class="visually-hidden form__input-choice-app" type="radio" id="pink-Windows" name="type-pink"
+                value="for-Windows">
               <label for="pink-Windows">Windows Phone</label>
             </li>
           </ul>
@@ -172,7 +184,8 @@
       <p class="page-footer__copyright">Разработано
         <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Перейти на страницу Html Academy в раздел HTML и CSS. Адаптивная вёрстка и автоматизация">
-          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="page-footer__coordinates-svg" width="27" height="34" viewBox="0 0 27 34" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
               fill="#D22856" />

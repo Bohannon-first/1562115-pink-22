@@ -144,10 +144,21 @@
   border: 2px solid @basic-border;
   display: block;
   box-sizing: border-box;
+  border-radius: 2px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     padding-left: 20px;
   }
+}
+
+.form__input:hover,
+.form__input:focus {
+  border-color: @basic-color-text;
+}
+
+.form__input:active {
+  border-color: @basic-red;
 }
 
 .form__input::placeholder {
@@ -226,6 +237,7 @@
 
 .form__item-achievements {
   margin-bottom: 47px;
+  padding-left: 62px;
 
   &:last-child {
     margin-bottom: 44px;
@@ -272,8 +284,45 @@
 }
 
 .form__item-achievements label {
+  position: relative;
+  display: block;
+  cursor: pointer;
   font-size: 18px;
   line-height: 30px;
+  user-select: none;
+}
+
+.form__input-achievement + label::before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -62px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid @basic-border;
+  border-radius: 1px;
+  background-color: @basic-white;
+}
+
+.form__input-achievement:hover + label::before,
+.form__input-achievement:focus + label::before {
+  border-color: @basic-color-text;
+}
+
+.form__input-achievement:active + label::before {
+  border-color: @basic-red;
+}
+
+.form__input-achievement:checked + label::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -53px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icons/checkbox-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .form__contacts {
@@ -353,12 +402,12 @@
 }
 
 .form__item-contacts label {
+  display: block;
   font-size: 14px;
   line-height: 30px;
   color: @basic-red;
   padding-left: 24px;
   text-transform: uppercase;
-  display: block;
 
   @media (min-width: @tablet-width) {
     order: 1;
@@ -382,6 +431,44 @@
 
   @media (min-width: @desktop-width) {
     width: 371px;
+  }
+}
+
+.form__input-name-wrapper {
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 59px;
+      height: 59px;
+      background-image: url("../img/icons/phone-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: @basic-border;
+    }
+  }
+}
+
+.form__input-email-wrapper {
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 59px;
+      height: 59px;
+      background-image: url("../img/icons/mail-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: @basic-border;
+    }
   }
 }
 
@@ -445,8 +532,21 @@
   }
 }
 
+.form__item-choice-app {
+  padding-left: 70px;
+}
+
 .form__item-choice-app:not(:last-child) {
   margin-bottom: 38px;
+}
+
+.form__item-choice-app label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .form__input-choice-app {
@@ -454,9 +554,36 @@
   margin-right: 22px;
 }
 
-.form__item-choice-app label {
-  font-size: 18px;
-  line-height: 30px;
+.form__input-choice-app + label::before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -70px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid @basic-border;
+  background-color: @basic-white;
+  border-radius: 50%;
+}
+
+.form__input-choice-app:hover + label::before,
+.form__input-choice-app:focus + label::before {
+  border-color: @basic-color-text;
+}
+
+.form__input-choice-app:active + label::before {
+  border-color: @basic-red;
+}
+
+.form__input-choice-app:checked + label::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -57px;
+  width: 15px;
+  height: 15px;
+  background-color: @basic-red;
+  border-radius: 50%;
 }
 
 .form__feedback {
