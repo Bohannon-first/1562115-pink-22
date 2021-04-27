@@ -67,6 +67,7 @@
     justify-content: space-around;
     align-items: center;
     padding-bottom: 34px;
+    position: relative;
   }
 
   @media (min-width: @tablet-width) {
@@ -100,7 +101,7 @@
 
 .filters__range-control--cut {
   @media (max-width: 659px) {
-    order: 3;
+    flex-direction: column-reverse;
   }
 }
 
@@ -113,12 +114,14 @@
   display: none;
 
   &--current {
+    position: absolute;
     display: initial;
   }
 
   @media (min-width: @tablet-width) {
     width: 202px;
     display: initial;
+    position: initial;
   }
 
   @media (min-width: @desktop-width) {
@@ -155,10 +158,12 @@
 
 .filters__button-cut {
   padding: 0;
+  margin-bottom: 39px;
   border: none;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 0;
     margin-right: 29px;
   }
 }
@@ -199,10 +204,12 @@
 
 .filters__button-coloring {
   padding: 0;
+  margin-bottom: 39px;
   border: none;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 0;
     margin-right: 28px;
   }
 }
@@ -243,10 +250,12 @@
 
 .filters__button-brightness {
   padding: 0;
+  margin-bottom: 39px;
   border: none;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 0;
     margin-right: 32px;
     padding-left: 3px;
   }
@@ -273,13 +282,13 @@
   }
 }
 
-.filters__button-coordinates-svg:hover:not(.filters__button-coordinates-current) path {
+.filters__button-coordinates-svg:hover:not(.filters__button-coordinates--current) path {
   @media (max-width: 659px) {
     fill: fade(@basic-color-text, 50%);
   }
 }
 
-.filters__button-coordinates-current path {
+.filters__button-coordinates--current path {
   @media (max-width: 659px) {
     fill: @basic-red;
   }
