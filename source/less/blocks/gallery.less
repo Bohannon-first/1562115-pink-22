@@ -45,19 +45,29 @@
 }
 
 .gallery__item {
+  display: flex;
+  flex-direction: column;
+
+
   background-color: @basic-bgc-photo;
-  padding-bottom: 25px;
   box-sizing: border-box;
+  min-height: 301px;
+  padding-bottom: 19px;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 24px;
+
     &:not(:first-child) {
       margin: 0;
       width: 300px;
+      min-height: 455px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    width: 940px;
+    &:not(:first-child) {
+      min-height: 555px;
+    }
   }
 }
 
@@ -87,21 +97,53 @@
 
 .gallery__link {
   display: block;
+  margin-bottom: 15px;
 }
 
 .gallery__link--main {
+  position: relative;
   margin-left: -20px;
   margin-right: -20px;
+
+  &::before {
+    position: absolute;
+    content: "Панорама дня";
+    top: 0;
+    right: 20px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: @basic-white;
+    width: 140px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: @basic-red;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      top: 57px;
+    }
+  }
 
   @media (min-width: @desktop-width) {
     margin-left: -130px;
     margin-right: -130px;
+
+    &::before {
+      top: 54px;
+      right: 130px;
+    }
   }
 }
 
 .gallery__image {
   width: 100%;
-  margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     height: 300px;
@@ -115,6 +157,7 @@
 .gallery__review {
   margin: 0;
   padding-left: 17px;
+  flex-grow: 1;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -124,7 +167,6 @@
 }
 
 .gallery__review--main {
-  margin: 0 20px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
@@ -189,6 +231,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: auto;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
@@ -206,9 +249,23 @@
 }
 
 .gallery__button-likes {
+  position: relative;
   width: 13px;
   height: 12px;
   margin-right: 18px;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icons/button-likes.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
     order: 2;
