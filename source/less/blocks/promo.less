@@ -7,13 +7,22 @@
   min-height: 729px;
   margin-top: -75px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/mobile/bgc-promo-mobile@2x.jpg");
+    background-size: 640px auto;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/background/tablet/bgc-promo-tablet.jpg");
-    background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
     min-height: 725px;
     margin-top: -110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/tablet/bgc-promo-tablet@2x.jpg");
+      background-size: 1320px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -22,6 +31,11 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     min-height: 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/desktop/bgc-promo-desktop@2x.jpg");
+      background-size: 2400px auto;
+    }
   }
 }
 
@@ -41,6 +55,7 @@
     width: 620px;
     min-height: inherit;
     padding: 0;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,15 +68,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  min-height: inherit;
   margin-bottom: 30px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     justify-content: center;
+    position: initial;
+    z-index: 3;
   }
 
   @media (min-width: @tablet-width) {
     min-height: 280px;
+  }
+}
+
+.promo__img-hand {
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 213px;
+    left: 0;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: inherit;
+    bottom: -22px;
+    left: 54px;
   }
 }
 
@@ -93,6 +127,7 @@
   color: @basic-white;
   margin: 0;
   margin-top: 89px;
+  margin-bottom: 65px;
   width: 225px;
   text-align: center;
 
@@ -100,7 +135,7 @@
     font-size: 40px;
     line-height: 48px;
     margin-left: 57px;
-    margin-top: 150px;
+    margin-top: 160px;
     margin-bottom: 14px;
     width: 190px;
   }
@@ -124,8 +159,8 @@
   border: 3px solid @basic-white;
   border-radius: 40px;
   text-align: center;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 23px;
