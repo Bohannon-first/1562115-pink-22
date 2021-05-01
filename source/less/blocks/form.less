@@ -671,6 +671,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
     margin: 0 auto;
     width: 620px;
@@ -710,6 +711,10 @@
   text-align: center;
   margin: 0;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .form__note-snowflake {
