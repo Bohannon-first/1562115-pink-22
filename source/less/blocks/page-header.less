@@ -43,14 +43,16 @@
 }
 
 .page-header__logo-svg {
+  fill: @basic-white;
   cursor: pointer;
 
-  &:hover path {
+  &:hover {
     fill: @basic-red;
   }
 
-  &:active path {
+  &:active {
     fill: fade(@basic-white, 30%);
+    opacity: 30%;
   }
 }
 
