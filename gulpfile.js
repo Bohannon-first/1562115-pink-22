@@ -20,6 +20,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -87,7 +88,7 @@ const sprite = () => {
   .pipe(svgstore({
     inlineSvg: true
   }))
-  .pipe(rename("sprite-build.svg"))
+  .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
 }
 
@@ -96,7 +97,7 @@ exports.sprite = sprite;
 // Copy
 const copy = (done) => {
   gulp.src([
-    "source/fonts/*.{woff2, woff}",
+    "source/fonts/*.{woff2,woff}",
     "source/*.ico",
   ], {
     base: "source"
