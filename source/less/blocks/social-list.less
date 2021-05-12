@@ -1,5 +1,6 @@
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   margin-bottom: 39px;
@@ -7,6 +8,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+    width: 200px;
   }
 }
 
@@ -41,6 +43,10 @@
     &:active {
       opacity: 30%;
     }
+
+    @media (min-width: @tablet-width) {
+      background-position: 21px center;
+    }
   }
 
   &--facebook {
@@ -54,6 +60,10 @@
     &:active {
       opacity: 30%;
     }
+
+    @media (min-width: @tablet-width) {
+      background-position: 21px center;
+    }
   }
 
   &--youtube {
@@ -66,6 +76,10 @@
 
     &:active {
       opacity: 30%;
+    }
+
+    @media (min-width: @tablet-width) {
+      background-position: 21px center;
     }
   }
 }

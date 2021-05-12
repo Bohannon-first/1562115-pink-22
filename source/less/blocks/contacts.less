@@ -8,7 +8,7 @@
     margin: 0 auto;
     width: 620px;
     display: block;
-    padding-top: 55px;
+    padding-top: 43px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -30,10 +30,15 @@
   font-weight: 700;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 46px;
+
+    &--phone {
+      margin-left: 47px;
+      margin-right: 97px;
+    }
 
     &--address {
-      margin-bottom: 0;
+      margin: 0 auto;
     }
   }
 
@@ -72,7 +77,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin-bottom: 23px;
   }
 }
 
@@ -91,6 +96,9 @@
     color: fade(@basic-color-text, 30%);
   }
 
+  @media (min-width: @tablet-width) {
+    padding-top: 2px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-top: 20px;

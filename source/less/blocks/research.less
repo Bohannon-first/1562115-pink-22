@@ -19,7 +19,7 @@
 .research__wrapper {
   background-image: url("../img/background/mobile/24hours.png");
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left 53px;
   background-size: 238px 276px;
   box-sizing: border-box;
 
@@ -28,7 +28,7 @@
     width: 620px;
     min-height: 340px;
     padding-left: 310px;
-    padding-bottom: 29px;
+    padding-bottom: 33px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -63,6 +63,12 @@
   }
 }
 
+.research-title br {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .research-description {
   @media (min-width: @tablet-width) {
     font-size: 14px;
@@ -77,6 +83,12 @@
     line-height: 30px;
     width: 534px;
     margin-bottom: 47px;
+  }
+}
+
+.research-description br {
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 

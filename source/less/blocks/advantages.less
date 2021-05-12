@@ -2,7 +2,8 @@
   background-image: linear-gradient(355deg, @basic-bgc-photo 80%, @basic-white 80%, @basic-white 100%);
 
   @media (min-width: @tablet-width) {
-    background-image: linear-gradient(355deg, @basic-bgc-photo 76%, @basic-white 76%, @basic-white 100%);
+    background-image: linear-gradient(355deg, @basic-bgc-photo 77%, @basic-white 77%, @basic-white 100%);
+    margin-bottom: 132px;
   }
 
   @media (min-width: @desktop-width) {
@@ -38,7 +39,8 @@
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 54.5px;
-    padding-bottom: 47px;
+    padding-bottom: 36px;
+    margin-top: 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -71,12 +73,6 @@
 
   @media (min-width: @desktop-width) {
     width: 420px;
-  }
-}
-
-.advantages__caption-two br {
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }
 
@@ -185,7 +181,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: @desktop-width) {
@@ -215,7 +211,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -227,5 +223,17 @@
     &--current {
       order: initial;
     }
+  }
+}
+
+.advantages__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

@@ -14,6 +14,7 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/background/tablet/bgc-promo-tablet.jpg");
+    background-position: center 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
     min-height: 725px;
@@ -78,7 +79,8 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 0;
     position: initial;
     z-index: 3;
     margin-top: 0;
@@ -94,9 +96,10 @@
 .promo__img-hand {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 213px;
-    left: 0;
+    top: 182px;
+    left: -20px;
     z-index: 1;
+    max-width: initial;
   }
 
   @media (min-width: @desktop-width) {
@@ -115,10 +118,10 @@
   margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 38px;
+    margin-bottom: 26px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     margin-bottom: 45px;
   }
 }
@@ -141,8 +144,8 @@
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
-    margin-left: 57px;
-    margin-top: 160px;
+    margin-left: 55px;
+    margin-top: 122px;
     margin-bottom: 14px;
     width: 190px;
   }
@@ -185,7 +188,12 @@
 
   @media (min-width: @tablet-width) {
     width: 300px;
-    margin-bottom: 46px;
+    margin-top: 16px;
+    margin-bottom: 47px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   @media (min-width: @desktop-width) {
