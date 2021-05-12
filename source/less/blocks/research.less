@@ -35,17 +35,17 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-position: left 17px;
+    background-position: 8px 17px;
     width: 940px;
     background-size: 298px 345px;
     min-height: 430px;
-    padding-left: 369px;
-    padding-bottom: 120px;
-    margin-top: 60px;
+    padding-left: 379px;
+    padding-bottom: 112px;
+    margin-top: 0;
   }
 }
 
-.research-title {
+.research__title {
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 36px;
@@ -53,23 +53,22 @@
     color: @basic-black;
     margin: 0;
     margin-bottom: 10px;
-    width: 168px;
   }
 
   @media (min-width: @desktop-width) {
     line-height: 20px;
-    margin-bottom: 37px;
+    margin-bottom: 30px;
     width: initial;
   }
 }
 
-.research-title br {
+.research__title br {
   @media (min-width: @desktop-width) {
     display: none;
   }
 }
 
-.research-description {
+.research__description {
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 24px;
@@ -82,17 +81,25 @@
     font-size: 18px;
     line-height: 30px;
     width: 534px;
-    margin-bottom: 47px;
+    margin-bottom: 29px;
   }
 }
 
-.research-description br {
+.research__description-line-break-tablet {
   @media (min-width: @desktop-width) {
     display: none;
   }
 }
 
-.research-link {
+.research__description-line-break-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.research__link {
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 24px;

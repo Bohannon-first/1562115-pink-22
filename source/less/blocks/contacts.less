@@ -43,8 +43,19 @@
   }
 
   @media (min-width: @desktop-width) {
+    &--phone {
+      margin-left: 55px;
+      margin-right: 111px;
+      margin-bottom: 0;
+    }
+
     &--mail {
       order: 3;
+    }
+
+    &--address {
+      margin: 0;
+      margin-right: 95px;
     }
   }
 }
@@ -67,7 +78,8 @@
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68px;
-    margin-bottom: 61px;
+    margin-bottom: 41px;
+    margin-left: 16px;
   }
 }
 
@@ -78,6 +90,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 6px;
   }
 }
 
