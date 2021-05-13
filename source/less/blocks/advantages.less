@@ -70,6 +70,7 @@
 
 .advantages__caption-two {
   margin-bottom: 50px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     width: 335px;
@@ -109,6 +110,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
     padding-top: 19px;
     margin-bottom: 0;
@@ -127,7 +129,7 @@
     align-items: center;
     text-align: center;
 
-    &:not(:last-child) {
+    &:not(:nth-child(3n)) {
       margin-right: 78px;
     }
   }
@@ -218,7 +220,7 @@
 .advantages__description {
   font-size: 14px;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 
   &--current {
     order: 2;

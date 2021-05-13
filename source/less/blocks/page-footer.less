@@ -1,3 +1,10 @@
+.page-footer {
+  @media (min-width: @desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -11,15 +18,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: initial;
-    padding-top: 31px;
+    padding-top: 33px;
     padding-left: 0;
     padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
-    padding-top: 70px;
+    padding-top: 72px;
     padding-bottom: 75px;
+    justify-content: space-between;
   }
 }
 
