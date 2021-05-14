@@ -48,7 +48,7 @@
     margin-bottom: 84px;
     padding: 0;
     padding-left: 94px;
-    padding-right: 84px;
+    padding-right: 79px;
   }
 }
 
@@ -83,7 +83,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
     margin: 0;
-    margin-right: 82px;
+    margin-right: 74px;
     order: initial;
   }
 }
@@ -115,7 +115,7 @@
     margin-bottom: 52px;
 
     &:last-child {
-      margin-bottom: 57px;
+      margin-bottom: 56px;
     }
   }
 
@@ -214,7 +214,7 @@
     grid-row-end: 5;
     margin: 0;
     margin-bottom: 61px;
-    padding-top: 47px;
+    padding-top: 46px;
     width: inherit;
   }
 }
@@ -238,7 +238,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 37px;
+    padding-left: 46px;
   }
 }
 
@@ -329,6 +329,10 @@
   border: 2px solid @basic-border;
   border-radius: 3px;
   background-color: @basic-white;
+
+  @media (min-width: @desktop-width) {
+    left: -59px;
+  }
 }
 
 .form__input-achievement:hover + label::before,
@@ -375,10 +379,11 @@
     grid-row-end: 4;
     width: inherit;
     margin: 0;
-    margin-top: 54px;
+    margin-top: 52px;
     margin-bottom: 54px;
-    padding: 0 66px;
-    padding-top: 23px;
+    padding-left: 66px;
+    padding-right: 52px;
+    padding-top: 25px;
     padding-bottom: 16px;
   }
 }
@@ -453,7 +458,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 22px;
+    padding-left: 18px;
   }
 }
 
@@ -557,6 +562,11 @@
     padding-right: 25px;
     padding-left: 25px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 33px;
+    padding-right: 20px;
+  }
 }
 
 .form__list-choice-app {
@@ -572,12 +582,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 72px;
+    padding-left: 78px;
   }
 }
 
 .form__item-choice-app {
-  padding-left: 70px;
+  padding-left: 68px;
 
   @media (min-width: @tablet-width) {
     padding-left: 59px;
@@ -605,13 +615,17 @@
 .form__input-choice-app + label::before {
   position: absolute;
   content: "";
-  top: -3px;
-  left: -62px;
+  top: -5px;
+  left: -71px;
   width: 37px;
   height: 37px;
   border: 2px solid @basic-border;
   background-color: @basic-white;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    left: -60px;
+  }
 }
 
 .form__input-choice-app:hover + label::before,
@@ -626,12 +640,16 @@
 .form__input-choice-app:checked + label::after {
   position: absolute;
   content: "";
-  top: 9px;
-  left: -48px;
+  top: 8px;
+  left: -57px;
   width: 15px;
   height: 15px;
   background-color: @basic-red;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    left: -47px;
+  }
 }
 
 .form__feedback {
@@ -683,7 +701,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 46px;
+    padding-left: 52px;
   }
 }
 
@@ -711,8 +729,9 @@
   @media (min-width: @desktop-width) {
     width: 816px;
     height: 124px;
-    padding-left: 22px;
+    padding-left: 25px;
     padding-right: 22px;
+    padding-top: 10px;
   }
 }
 
@@ -744,7 +763,7 @@
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
-  margin-bottom: 6px;
+  margin-bottom: 36px;
 
   @media (min-width: @tablet-width) {
     width: 296px;
@@ -766,6 +785,10 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: -8px;
   }
 }
 
