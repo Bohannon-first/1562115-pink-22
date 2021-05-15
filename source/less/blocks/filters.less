@@ -19,8 +19,8 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    margin-top: 70px;
-    margin-bottom: 57px;
+    margin-top: 66px;
+    margin-bottom: 55px;
     padding-bottom: 70px;
   }
 }
@@ -32,7 +32,6 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 47px;
     margin: 0 auto;
     width: 620px;
     padding: 0;
@@ -64,9 +63,9 @@
   @media (max-width: 659px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
     padding-bottom: 34px;
+    padding-top: 4px;
     position: relative;
   }
 
@@ -76,6 +75,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    padding-left: 39px;
   }
 }
 
@@ -83,13 +83,21 @@
   display: flex;
   flex-direction: column;
 
+  &:not(:nth-child(3n)) {
+    margin-right: 35px;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    height: 72px;
+    height: 65px;
     border-bottom: 1px solid fade(@basic-color-text, 10%);
+
+    &:not(:nth-child(3n)) {
+      margin-right: initial;
+    }
   }
 }
 
@@ -116,12 +124,22 @@
   &--current {
     position: absolute;
     display: initial;
+    left: 21px;
   }
 
   @media (min-width: @tablet-width) {
     width: 202px;
     display: initial;
     position: initial;
+    align-self: center;
+
+    &--current {
+      margin-bottom: 21px;
+    }
+
+    &--coloring {
+      margin-bottom: 7px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -158,13 +176,15 @@
 
 .filters__button-cut {
   padding: 0;
+  padding-left: 37px;
   margin-bottom: 39px;
   border: none;
   cursor: pointer;
   background-color: transparent;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    padding: 0;
+    margin-bottom: 18px;
     margin-right: 29px;
   }
 }
@@ -242,7 +262,7 @@
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    left: 100px;
+    left: 97px;
   }
 
   @media (min-width: @desktop-width) {
@@ -314,6 +334,7 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     padding: 0;
+    padding-left: 37px;
     border: none;
   }
 
@@ -362,7 +383,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: @desktop-width) {
