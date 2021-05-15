@@ -34,11 +34,11 @@
 // Окно об ошибке
 .modal--error {
   display: none;
-  padding-top: 42px;
+  padding-top: 48px;
 
   @media (min-width: @tablet-width) {
     width: 460px;
-    padding-top: 47px;
+    padding-top: 38px;
     border-radius: 5px;
   }
 
@@ -49,14 +49,14 @@
 
 .modal__title--error {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 40px;
     padding: 0 115px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,13 +66,13 @@
 
 .modal__text--error {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     padding: 0 80px;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,11 +87,13 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 80px;
-    padding-bottom: 45px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 52px 242px;
+    padding: 0 242px;
+    padding-top: 53px;
+    padding-bottom: 52px;
     background-color: @basic-bgc-photo;
   }
 }
@@ -99,7 +101,7 @@
 // Окно об отправке
 .modal--send {
   display: none;
-  padding-top: 34px;
+  padding-top: 41px;
 
   @media (min-width: @tablet-width) {
     width: 460px;
@@ -130,13 +132,13 @@
 
 .modal__text--send {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 34px;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     padding: 0 65px;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -145,12 +147,18 @@
   }
 }
 
+.modal__text--send br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .modal__wrapper-button-send {
   background-color: @basic-bgc-photo;
   padding: 51px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 51px 83px;
+    padding: 57px 83px;
   }
 
   @media (min-width: @desktop-width) {
