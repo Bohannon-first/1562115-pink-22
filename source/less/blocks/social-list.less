@@ -13,6 +13,7 @@
 
   @media (min-width: @desktop-width) {
     width: initial;
+    margin-left: 8px;
   }
 }
 
@@ -33,6 +34,10 @@
 
 .social-list__item:not(:last-child) {
   margin-right: 8px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 5px;
+  }
 }
 
 .social-list__link {
@@ -49,7 +54,11 @@
     }
 
     @media (min-width: @tablet-width) {
-      background-position: 21px center;
+      background-position: 19px center;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 16px center;
     }
   }
 
