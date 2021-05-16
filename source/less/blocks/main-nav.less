@@ -172,7 +172,7 @@
   }
 
   &:active {
-    color: fade(@basic-white, 30%);
+    color: fade(@basic-red, 30%);
   }
 
   @media (min-width: @desktop-width) {
@@ -183,5 +183,9 @@
     display: initial;
     padding: 0;
     background-color: initial;
+
+    &:active {
+      color: fade(@basic-white, 30%);
+    }
   }
 }

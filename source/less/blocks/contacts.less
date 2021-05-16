@@ -126,5 +126,14 @@
 
 .contacts__map-image {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
 }
