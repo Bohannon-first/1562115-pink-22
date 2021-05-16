@@ -23,6 +23,12 @@
     margin-bottom: 55px;
     padding-bottom: 70px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 55px;
+    margin-bottom: 0;
+    padding-bottom: 67px;
+  }
 }
 
 .filters__form-wrapper {
@@ -39,12 +45,14 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-template-columns: auto 1fr;
+    column-gap: 92px;
     width: 940px;
     background-color: @basic-bgc-photo;
     padding-left: 80px;
     padding-right: 60px;
     padding-top: 57px;
-    gap: 0;
+    margin-bottom: 22px;
   }
 }
 
@@ -76,6 +84,10 @@
     grid-row-start: 1;
     grid-row-end: 2;
     padding-left: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -170,7 +182,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    left: 240px;
+    left: 236px;
   }
 }
 
@@ -186,6 +198,10 @@
     padding: 0;
     margin-bottom: 18px;
     margin-right: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 45px;
   }
 }
 
@@ -234,6 +250,11 @@
     margin-bottom: 0;
     margin-right: 28px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 42px;
+    margin-bottom: 7px;
+  }
 }
 
 .filters__button-coloring svg {
@@ -281,6 +302,10 @@
     margin-bottom: 0;
     margin-right: 32px;
     padding-left: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 56px;
   }
 }
 
@@ -343,6 +368,8 @@
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
+    padding-left: 0;
+    padding-bottom: 4px;
   }
 }
 

@@ -43,7 +43,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    row-gap: 54px;
+    row-gap: 50px;
     width: 940px;
   }
 }
@@ -70,6 +70,7 @@
   @media (min-width: @desktop-width) {
     &:not(:first-child) {
       min-height: 555px;
+      margin-bottom: 3px;
     }
   }
 }
@@ -88,6 +89,7 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin-bottom: 0;
   }
 }
 
@@ -173,6 +175,11 @@
     padding: 0 30px;
     padding-bottom: 7px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 27px;
+    padding-right: 31px;
+  }
 }
 
 .gallery__review--main {
@@ -188,6 +195,8 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    padding-left: 27px;
+    padding-right: 31px;
   }
 }
 
@@ -286,6 +295,10 @@
   @media (min-width: @tablet-width) {
     order: 2;
     margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -1px;
   }
 }
 
