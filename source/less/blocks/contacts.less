@@ -124,6 +124,56 @@
   }
 }
 
+.contacts__wrapper-map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-top: 32px solid @basic-white;
+    z-index: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      border-left: 330px solid transparent;
+      border-right: 330px solid transparent;
+      border-top: 68px solid @basic-white;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      border-left: 600px solid transparent;
+      border-right: 600px solid transparent;
+      border-top: 103px solid @basic-white;
+    }
+  }
+}
+
+.contacts__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
+}
+
 .contacts__map-image {
   width: 100%;
   height: 200px;
