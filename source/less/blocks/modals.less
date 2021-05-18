@@ -1,5 +1,6 @@
 //Общие свойства
 .modal {
+  display: none;
   z-index: 2;
   position: fixed;
   background-color: @basic-white;
@@ -31,9 +32,32 @@
   padding: 15px;
 }
 
+.modal-show {
+  display: block;
+  animation: move;
+  animation-duration: 0.25s;
+}
+
+// Анимация
+@keyframes move {
+  from,
+  to {
+    bottom: 1%;
+    left: 50%;
+  }
+
+  25%,
+  75% {
+    top: 100%;
+  }
+
+  50% {
+    top: 30%;
+  }
+}
+
 // Окно об ошибке
 .modal--error {
-  display: none;
   padding-top: 48px;
 
   @media (min-width: @tablet-width) {
@@ -100,7 +124,6 @@
 
 // Окно об отправке
 .modal--send {
-  display: none;
   padding-top: 41px;
 
   @media (min-width: @tablet-width) {

@@ -62,7 +62,7 @@
     </div>
     <section class="form">
       <h2 class="visually-hidden">Заполните нашу форму об использовании приложения Pink</h2>
-      <form class="form__user-form" method="POST" action="https://echo.htmlacademy.ru">
+      <form class="form__user-form" method="POST" action="https://echo.htmlacademy.ru" target="_blank">
         <p class="form__description">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span>Пожалуйста, заполните форму ниже:</span>
@@ -71,13 +71,11 @@
           <ul class="form__list-name">
             <li class="form__item-name">
               <label for="your-surname">Фамилия:</label>
-              <input class="form__input" type="text" id="your-surname" name="surname" placeholder="Укажите фамилию *"
-                required>
+              <input class="form__input" type="text" id="your-surname" name="surname" placeholder="Укажите фамилию *">
             </li>
             <li class="form__item-name">
               <label for="your-name">Имя:</label>
-              <input class="form__input" type="text" id="your-name" name="name" placeholder="Введите ваше имя *"
-                required>
+              <input class="form__input" type="text" id="your-name" name="name" placeholder="Введите ваше имя *">
             </li>
             <li class="form__item-name">
               <label for="your-patronymic">Отчество:</label>
@@ -132,8 +130,7 @@
             <li class="form__item-contacts">
               <label for="your-email">Адрес почты</label>
               <div class="form__input-email-wrapper">
-                <input class="form__input" type="email" id="your-email" name="email" placeholder="Введите почту *"
-                  required>
+                <input class="form__input" type="email" id="your-email" name="email" placeholder="Введите почту *">
               </div>
             </li>
           </ul>
@@ -216,7 +213,7 @@
     <p class="modal__text modal__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
     </p>
     <div class="modal__wrapper-button-error">
-      <button class="modal__button button" type="button" aria-label="Закрыть">Ок</button>
+      <button class="modal__button button button--close-error" type="button" aria-label="Закрыть">Ок</button>
     </div>
   </section>
 
@@ -226,7 +223,7 @@
       мы рассмотрим ее и&nbsp;<br>оповестим вас.
     </p>
     <div class="modal__wrapper-button-send">
-      <button class="modal__button button" type="button">Закрыть окно</button>
+      <button class="modal__button button button--close-send" type="button">Закрыть окно</button>
     </div>
   </section>
   <script src="js/javascript.min.js"></script>
