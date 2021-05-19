@@ -109,10 +109,12 @@
   &:hover,
   &:focus {
     color: @basic-color-text;
+    text-decoration: underline;
   }
 
   &:active {
     color: fade(@basic-color-text, 30%);
+    text-decoration: none;
   }
 
   @media (min-width: @tablet-width) {
@@ -131,7 +133,8 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
     height: 0;
     border-left: 160px solid transparent;

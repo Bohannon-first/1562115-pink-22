@@ -28,6 +28,7 @@ const surnameUser = document.querySelector("[name=surname]");
 const nameUser = document.querySelector("[name=name]");
 const emailUser = document.querySelector("[name=email]");
 const inputError = document.querySelector(".form__input--error");
+const requiredInputs = document.querySelectorAll(".form__input--required");
 
 // Проверка есть ли в браузере поддержка localStorage
 let isStorageSupport = true;
@@ -44,46 +45,46 @@ formSend.addEventListener("submit", function (evt) {
   if (!surnameUser.value || !nameUser.value || !emailUser.value) {
   evt.preventDefault();
   modalError.classList.add("modal-show"); // Окно об ошибке
+  document.body.style.overflow = 'hidden';
   } else {
     if (isStorageSupport) {
       localStorage.setItem("surname", surnameUser.value) && ("name", nameUser.value) && ("email", emailUser.value);
       modalSend.classList.add("modal-show"); // Окно об отправке формы
+      document.body.style.overflow = 'hidden';
     }
   }
 });
 
-// Проверка наличия незаполненных полей
+// Проверка наличия незаполненных полей с присвоением красной обводки
 formSend.addEventListener("submit", function() {
-  if (surnameUser.value == "") {
-    surnameUser.classList.add("form__input--error");
+  for (let requiredInput of requiredInputs) {
+    if (requiredInput.value == "") {
+      requiredInput.classList.add("form__input--error");
+    }
   }
 });
 
-formSend.addEventListener("submit", function () {
-  if (nameUser.value == "") {
-    nameUser.classList.add("form__input--error");
+// Удаление красных полей ввода при наборе текста
+for (let requiredInput of requiredInputs) {
+  requiredInput.onchange = function () {
+    if (requiredInput.classList.contains("form__input--error")) {
+      requiredInput.classList.remove("form__input--error");
+    }
   }
-});
-
-formSend.addEventListener("submit", function () {
-  if(emailUser.value == "") {
-    emailUser.classList.add("form__input--error");
-  }
-});
+};
 
 // Закрытие модального окна об отправке формы
 btnCloseSend.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalSend.classList.remove("modal-show");
+  document.body.style.overflow = "visible";
 });
 
 // Закрытие модального окна об ошибке
 btnCloseError.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalError.classList.remove("modal-show");
-  surnameUser.classList.remove("form__input--error");
-  nameUser.classList.remove("form__input--error");
-  emailUser.classList.remove("form__input--error");
+  document.body.style.overflow = "visible";
 });
 
 // Закрытие модальных окон кнопкой Esc
@@ -93,9 +94,7 @@ window.addEventListener("keydown", function (evt) {
       evt.preventDefault();
       modalSend.classList.remove("modal-show");
       modalError.classList.remove("modal-show");
-      surnameUser.classList.remove("form__input--error");
-      nameUser.classList.remove("form__input--error");
-      emailUser.classList.remove("form__input--error");
+      document.body.style.overflow = "visible";
     }
   }
 });

@@ -1,7 +1,7 @@
 //Общие свойства
 .modal {
   display: none;
-  z-index: 2;
+  z-index: 100;
   position: fixed;
   background-color: @basic-white;
   top: 50%;
@@ -35,7 +35,7 @@
 .modal-show {
   display: block;
   animation: move;
-  animation-duration: 0.25s;
+  animation-duration: 0.1s;
 }
 
 // Анимация
@@ -122,7 +122,7 @@
   }
 }
 
-// Окно об отправке
+// Окно об отправке формы
 .modal--send {
   padding-top: 41px;
 
