@@ -8,6 +8,7 @@
   }
 }
 
+// Кнопка главного меню на мобильнике и планшете
 .main-nav__toggle {
   position: absolute;
   top: 23px;
@@ -29,6 +30,7 @@
   }
 }
 
+// Кнопка-бургер
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -40,6 +42,7 @@
   box-shadow: 0 9px 0 0 @basic-white, 0 18px 0 0 @basic-white;
 }
 
+// Наведение и фокус на кнопку-бургер
 .main-nav--closed .main-nav__toggle:hover::before,
 .main-nav--closed .main-nav__toggle:focus::before {
   background-color: (@basic-red);
@@ -48,6 +51,7 @@
     0 18px 0 0 @basic-red;
 }
 
+// Нажатие на кнопку-бургер
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: fade(@basic-red, 30%);
   box-shadow:
@@ -59,12 +63,17 @@
   .main-nav--closed .main-nav__item {
     display: none;
   }
-
+  // Скрыть кнопку-бургер при неработающем js
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
+  // Показать меню при неработающем js
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
 }
 
+// Кнопка-крестик закрытия бургерного меню
 .main-nav--opened .main-nav__toggle {
   position: absolute;
   top: 23px;
@@ -109,6 +118,7 @@
   }
 }
 
+// Список с пунктами меню
 .main-nav__list {
   list-style: none;
   padding: 0;
@@ -135,6 +145,7 @@
   }
 }
 
+// Стилизация текущего пункта меню
 .main-nav__item--current {
   @media (min-width: @desktop-width) {
     position: relative;
