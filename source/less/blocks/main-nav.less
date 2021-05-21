@@ -137,6 +137,9 @@
   border-bottom: 1px solid @basic-black;
 
   @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+    height: 38px;
     border: none;
 
     &:not(:nth-child(4n)) {
@@ -153,7 +156,7 @@
     &::before {
       position: absolute;
       content: "";
-      bottom: -9px;
+      bottom: -2px;
       right: 0;
       left: 0;
       height: 2px;

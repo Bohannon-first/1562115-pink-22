@@ -162,6 +162,8 @@
   box-sizing: border-box;
   cursor: pointer;
   border-radius: 3px;
+  outline: none;
+  opacity: 1;
 
   @media (min-width: @tablet-width) {
     padding-left: 20px;
@@ -177,14 +179,12 @@
   border: 2px solid @basic-red;
 }
 
-.form__input:hover,
-.form__input:focus {
+.form__input:hover {
   border-color: @basic-color-text;
 }
 
-.form__input:active {
-  border-color: @basic-red;
-  outline: none;
+.form__input:focus-visible {
+  border: 2px solid @basic-red;
 }
 
 .form__input::placeholder {
@@ -263,9 +263,8 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: 314px 294px 263px;
     margin: 0;
-    padding-left: 65px;
   }
 }
 
@@ -344,12 +343,11 @@
   }
 }
 
-.form__input-achievement:hover + label::before,
-.form__input-achievement:focus + label::before {
+.form__input-achievement:hover + label::before {
   border-color: @basic-color-text;
 }
 
-.form__input-achievement:active + label::before {
+.form__input-achievement:focus-visible + label::before {
   border-color: @basic-red;
 }
 
@@ -511,6 +509,12 @@
   }
 }
 
+.form__input--phone {
+  @media (min-width: @tablet-width) {
+    padding-right: 67px;
+  }
+}
+
 .form__input-email-wrapper {
   @media (min-width: @tablet-width) {
     position: relative;
@@ -527,6 +531,12 @@
       background-position: center center;
       background-color: @basic-border;
     }
+  }
+}
+
+.form__input--email {
+  @media (min-width: @tablet-width) {
+    padding-right: 67px;
   }
 }
 
@@ -644,12 +654,11 @@
   }
 }
 
-.form__input-choice-app:hover + label::before,
-.form__input-choice-app:focus + label::before {
+.form__input-choice-app:hover + label::before {
   border-color: @basic-color-text;
 }
 
-.form__input-choice-app:active + label::before {
+.form__input-choice-app:focus-visible + label::before {
   border-color: @basic-red;
 }
 
